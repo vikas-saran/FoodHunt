@@ -1,0 +1,416 @@
+{
+    "data": [
+        {   "menudata":[
+            {
+                "id": 1,
+                "price": 1000,
+                "image": "./dinner1.jpeg",
+                "title": "ROASTED LAMB RUMP",
+                "description": "Juicy roasted lamb rump served with a side of seasonal vegetables and rich gravy.",
+                "category": "Dinner",
+                "rating": {
+                    "rate": 3.9,
+                    "count": 120
+                }
+            },
+            {
+                "id": 2,
+                "price": 223,
+                "image": "./dinner2.png",
+                "title": "CITRUS CURED SALMON",
+                "description": "Delicious citrus-cured salmon served with a fresh salad and lemon dressing.",
+                "category": "Lunch",
+                "rating": {
+                    "rate": 4.1,
+                    "count": 259
+                }
+            },
+            {
+                "id": 3,
+                "price": 599,
+                "image": "./breakfast1.png",
+                "title": "PAN SEARED SEA BASS",
+                "description": "Pan-seared sea bass fillet served on a bed of wild rice with a drizzle of lemon butter sauce.",
+                "category": "Lunch",
+                "rating": {
+                    "rate": 4.7,
+                    "count": 500
+                }
+            },
+            {
+                "id": 4,
+                "price": 159,
+                "image": "./dinner3.png",
+                "title": "STUFFED STRAWBERRY",
+                "description": "Fresh strawberries stuffed with creamy mascarpone cheese and drizzled with dark chocolate.",
+                "category": "Lunch",
+                "rating": {
+                    "rate": 2.1,
+                    "count": 430
+                }
+            },
+            {
+                "id": 5,
+                "price": 695,
+                "image": "./lunch1.png",
+                "title": "ALLU BURGER MEAL",
+                "description": "A hearty burger meal with a juicy beef patty, melted cheese, crispy bacon, and a side of golden fries.",
+                "category": "Dinner",
+                "rating": {
+                    "rate": 4.6,
+                    "count": 400
+                }
+            },
+            {
+                "id": 6,
+                "price": 168,
+                "image": "./dinner4.png",
+                "title": "MUSSELS SOUP",
+                "description": "A comforting bowl of mussel soup with fresh herbs and a hint of garlic, served with crusty bread.",
+                "category": "Starter",
+                "rating": {
+                    "rate": 3.9,
+                    "count": 70
+                }
+            },
+            {
+                "id": 7,
+                "price": 999,
+                "image": "./dinner5.png",
+                "title": "ITALIAN SPAGHETTI",
+                "description": "Traditional Italian spaghetti pasta with a rich tomato and basil sauce, topped with grated Parmesan cheese.",
+                "category": "Dinner",
+                "rating": {
+                    "rate": 3,
+                    "count": 400
+                }
+            },
+            {
+                "id": 8,
+                "price": 1099,
+                "image": "./dinner6.png",
+                "title": "GRILLED FISH",
+                "description": "Grilled fish fillet seasoned with herbs and served with a side of steamed vegetables and lemon wedges.",
+                "category": "Dinner",
+                "rating": {
+                    "rate": 1.9,
+                    "count": 100
+                }
+            },
+            {
+                "id": 9,
+                "price": 642,
+                "category": "Lunch",
+                "image": "./1.jpg",
+                "rating": {
+                    "rate": 3.3,
+                    "count": 203
+                },
+                "title": "CHICKEN CURRY",
+                "description": "A spicy and savory curry with tender chicken pieces"
+            },
+            {
+                "id": 10,
+                "price": 196,
+                "category": "Starter",
+                "title": "VEGETARIAN PASTA",
+                "description": "Pasta with fresh vegetables and a creamy sauce",
+                "image": "./2.jpg",
+                "rating": {
+                    "rate": 2.9,
+                    "count": 470
+                }
+            },
+            {
+                "id": 11,
+                "price": 189,
+                "category": "Lunch",
+                "title": "MUTTON STEW",
+                "description": "Slow-cooked beef stew with potatoes and carrots",
+               "image": "./3.jpg",
+                "rating": {
+                    "rate": 4.8,
+                    "count": 319
+                }
+            },
+            {
+                "id": 12,
+                "price": 214,
+                "category": "Lunch",
+                "title": "SPINACH SALAD",
+                "description": "Fresh spinach with cherry tomatoes, cucumbers, and balsamic dressing",
+               "image": "./4.jpg",
+                "rating": {
+                    "rate": 4.8,
+                    "count": 400
+                }
+            },
+            {
+                "id": 13,
+                "price": 599,
+                "category": "Dinner",
+                "title": "MUSHROOM RISOTTO",
+                "description": "Creamy risotto with mushrooms and Parmesan cheese",
+               "image": "./5.jpg",
+                "rating": {
+                    "rate": 2.9,
+                    "count": 250
+                }
+            },
+            {
+                "id": 14,
+                "price": 1399,
+                "category": "Lunch",
+                "title": "BBQ RIBS",
+                "description": "Tender BBQ ribs with a smoky flavor",
+                "image": "./6.jpeg",
+                "rating": {
+                    "rate": 2.2,
+                    "count": 140
+                }
+            },
+            {
+                "id": 15,
+                "price": 599,
+                "category": "Dinner",
+                "title": "GRILLED FISH",
+                "description": "Something delicate, fresh fish with authentic spices",
+              "image": "./7.jpg",
+                "rating": {
+                    "rate": 2.6,
+                    "count": 235
+                }
+            },
+            {
+                "id": 16,
+                "price": 295,
+                "category": "Dinner",
+                "title": "SHRIMP SCAMPI",
+                "description": "Garlicky shrimp sautéed in butter and white wine",
+               "image": "./8.jpg",
+                "rating": {
+                    "rate": 2.9,
+                    "count": 340
+                }
+            },
+            {
+                "id": 17,
+                "price": 399,
+                "category": "Lunch",
+                "title": "CAESAR SALAD",
+                "description": "Classic Caesar salad with romaine lettuce, croutons, and Caesar dressing",
+              "image": "./9.jpg",
+                "rating": {
+                    "rate": 3.8,
+                    "count": 679
+                }
+            },
+            {
+                "id": 18,
+                "price": 85,
+                "category": "Dinner",
+                "title": "THAI GREEN CURRY",
+                "description": "Thai curry with chicken, coconut milk, and green curry paste",
+                "image": "./10.jpg",
+                "rating": {
+                    "rate": 4.7,
+                    "count": 130
+                }
+            },
+            {
+                "id": 19,
+                "price": 295,
+                "category": "Lunch",
+                "title": "LASAGNA",
+                "description": "Layers of pasta with Bolognese sauce, ricotta, and mozzarella cheese",
+              "image": "./11.jpg",
+                "rating": {
+                    "rate": 4.5,
+                    "count": 146
+                }
+            },
+            {
+                "id": 20,
+                "price": 199,
+                "category": "Starter",
+                "title": "SUSHI PLATTER",
+                "description": "Assorted sushi rolls with fresh fish and seaweed",
+              "image": "./12.jpeg",
+                "rating": {
+                    "rate": 3.6,
+                    "count": 145
+                }
+            }
+            
+        ],
+            "ourQualities": [
+                {
+                    "id": 1,
+                    "image": "./quality_food.svg",
+                    "title": "QUALITY FOOD",
+                    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis repellendus officia qui repellat."
+                },
+                {
+                    "id": 2,
+                    "image": "./super_taste.svg",
+                    "title": "SUPER TASTE",
+                    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing sit amet elit. Sit voluptates quaerat pariatur."
+                },
+                {
+                    "id": 3,
+                    "image": "./fast_delivery.svg",
+                    "title": "FAST DELIVERY",
+                    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis repellendus officia qui repellat."
+                }
+            ],
+            "dishes": [
+                {
+                    "id": 1,
+                    "image": "./dinner1.jpeg",
+                    "title": "ROASTED LAMB RUMP",
+                    "category": "Dinner"
+                },
+                {
+                    "id": 2,
+                    "image": "./dinner2.png",
+                    "title": "CITRUS CURED SALMON",
+                    "category": "Dinner"
+                },
+                {
+                    "id": 3,
+                    "image": "./breakfast1.png",
+                    "title": "PAN SEARED SEA BASS",
+                    "category": "Breakfast"
+                },
+                {
+                    "id": 4,
+                    "image": "./dinner3.png",
+                    "title": "STUFFED STRAWBERRY",
+                    "category": "Dinner"
+                },
+                {
+                    "id": 5,
+                    "image": "./lunch1.png",
+                    "title": "ALLU BURGER MEAL",
+                    "category": "Lunch"
+                },
+                {
+                    "id": 6,
+                    "image": "./dinner4.png",
+                    "title": "MUSSELS SOUP",
+                    "category": "Dinner"
+                },
+                {
+                    "id": 7,
+                    "image": "./dinner5.png",
+                    "title": "ITALIAN SPAGHETTI",
+                    "category": "Dinner"
+                },
+                {
+                    "id": 8,
+                    "image": "./dinner6.png",
+                    "title": "GRILLED FISH",
+                    "category": "Dinner"
+                }
+            ],
+            "team": [
+                {
+                    "id": 1,
+                    "image": "./team_member_1.png",
+                    "name": "Ramprakash Khichi",
+                    "designation": "Founder & Head Chef"
+                },
+                {
+                    "id": 2,
+                    "image": "./team_member_2.png",
+                    "name": "Pemaram Munsi",
+                    "designation": "Sous Chef"
+                },
+                {
+                    "id": 3,
+                    "image": "./team_member_3.png",
+                    "name": "Jhon Alaudin Alluwaliya",
+                    "designation": "Fast Food Chef"
+                },
+                {
+                    "id": 4,
+                    "image": "./team_member_4.png",
+                    "name": "Lalu Halwai",
+                    "designation": "Senior Chef"
+                }
+            ],
+            "testimonials": [
+                {
+                    "id": 1,
+                    "image": "./review1.png",
+                    "description": "I recently visited FOODHUNT and was blown away by the quality of the food and service. The dishes were not only beautifully presented but also incredibly flavorful. The staff was attentive and made us feel right at home.",
+                    "rating": 4,
+                    "userName": "DM. Choudhary"
+                },
+                {
+                    "id": 2,
+                    "image": "./review2.png",
+                    "description": "The menu offers a perfect blend of classic and innovative dishes, each crafted with fresh, high-quality ingredients. The ambiance was cozy yet elegant, making it an ideal place for both casual meals and special occasions.",
+                    "rating": 4.5,
+                    "userName": "Manish Saran"
+                },
+                {
+                    "id": 3,
+                    "image": "./review3.png",
+                    "description": "We were greeted with warmth and professionalism. The food was exquisite, with every bite bursting with flavor. The staff went above and beyond to ensure we had a wonderful experience.",
+                    "rating": 5,
+                    "userName": "Vikas Saran"
+                }
+            ],
+            "who_we_are": [
+                {
+                    "id": 1,
+                    "number": "14",
+                    "title": "Branches"
+                },
+                {
+                    "id": 2,
+                    "number": "20",
+                    "title": "Chef's In Kitchen"
+                },
+                {
+                    "id": 3,
+                    "number": "04",
+                    "title": "Years Of Experience"
+                },
+                {
+                    "id": 4,
+                    "number": "200+",
+                    "title": "Dishes"
+                }
+            ],
+            "navbarLinks": [
+                {
+                    "id": 1,
+                    "title": "HOME",
+                    "link": "heroSection"
+                },
+                {
+                    "id": 2,
+                    "title": "ABOUT US",
+                    "link": "about"
+                },
+                {
+                    "id": 3,
+                    "title": "SERVICES",
+                    "link": "qualities"
+                },
+                {
+                    "id": 4,
+                    "title": "TEAM",
+                    "link": "team"
+                },
+                {
+                    "id": 5,
+                    "title": "RESERVATION",
+                    "link": "../reservation"
+                }
+            ]
+        }
+    ]
+}
