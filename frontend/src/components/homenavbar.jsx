@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import  data  from '../restApi.json';
 import { Link } from "react-scroll";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { NavLink } from "react-router-dom";
@@ -31,7 +30,7 @@ const HomeNavbar = () => {
     {
         "id": 5,
         "title": "RESERVATION",
-        "link": "../reservation"
+        "link": "reservation"
     }
 ]
   return (
