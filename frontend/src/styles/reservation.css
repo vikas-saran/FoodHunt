@@ -1,3 +1,21 @@
+:root{
+  --white : #fff;
+  --black : #000;
+  --cardBorder : #ffffff30;
+  --cardBackground : #ffffff1a;
+  --btnBg : #ffffff00;
+  --btnFocus : #ffffffb9;
+
+  --facebook : #1771e6;
+  --twitter : #1c99e6;
+  --instagram : #cb2770;
+  --whatsapp : #2fe664;
+  --telegram : #0081c2;
+  --github : rgb(88, 101, 242);
+}
+
+
+
 .reservation {
     display: flex;
     min-height: 75vh;
@@ -8,6 +26,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
+    position: relative;
   }
   .reservation .container {
     max-width: 1500px;
@@ -18,14 +37,66 @@
     width: 50%;
     padding: 50px;
   }
+
+  .reservation .circle1{  
+    width: 23rem;
+    height: 23rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    background: linear-gradient(-25deg, #d84869, #f46641);
+    box-shadow: 0 0 50px #d84869;
+    animation: circleTop 5s ease infinite;
+    z-index: -10;
+}
+ 
+ 
+ .reservation .circle2{ 
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 19%;
+    right: 20.5%;
+    background: linear-gradient(-25deg, #5648d8, #8641f4);
+    box-shadow: 0 0 50px #11bdc9;
+    animation: circleBottom 5s ease infinite;
+    z-index: -10;
+}
+
+@keyframes circleTop{
+    50%{
+        left: 33%;
+        top: 1%;
+        scale: .8;
+    }
+}
+
+@keyframes circleBottom{
+    50% {
+        /* bottom: 6%;
+        right: 21%; */
+        scale: 1.2
+      }
+}
+
+
+
   .reservation .container .banner .reservation_form_box {
-    width: 400px;
-    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
     height: 100%;
-    padding: 20px;
-    box-shadow: -1px 0px 37px 0px rgba(152, 87, 191, 0.75);
-    -webkit-box-shadow: -1px 0px 37px 0px rgba(152, 87, 191, 0.75);
-    -moz-box-shadow: -1px 0px 37px 0px rgba(152, 87, 191, 0.75);
+    width: 400px;
+    color: var(--white);
+    background: var(--cardBackground);
+    border: 0.2rem solid var(--cardBorder);
+    border-radius: 1.5rem;
+    padding: 2rem 5rem;
+    backdrop-filter: blur(1.5rem);
+    position: relative;
+    z-index: 10;  
   }
   .reservation .container .banner .reservation_form_box form div {
     display: flex;
@@ -40,7 +111,10 @@
     border: none;
     border-bottom: 1px solid #333;
     background: transparent;
+    color: #000;
   }
+
+
   .reservation
     .container
     .banner
@@ -138,6 +212,17 @@
     border-radius: 100%;
     color: #fff;
   }
+  .reservation .container .banner .reservation_form_box form button:hover {
+    color: #fff;
+    background: #111;
+    transition: ease-in-out 0.3s;
+  }
+  .reservation .container .banner .reservation_form_box form button:hover span{
+    background: #fff;
+    color: #111;
+    transition: ease-in-out 0.3s;
+  }
+  
   @media (max-width: 1520px) {
     .reservation .container {
       min-width: 100%;

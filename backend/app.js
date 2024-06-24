@@ -4,7 +4,7 @@ import cors from "cors";
 import { errorMiddleware } from "./middlewares/error.js";
 import reservationRouter from "./routes/reservationRoute.js";
 import { dbConnection } from "./database/dbConnection.js";
-
+import orderRouter from "./routes/oder.js";
 dotenv.config({ path: "./config/config.env" });
 const app = express();
 
@@ -18,7 +18,7 @@ app.use(
 app.use(express.json());
 app.use(express.urlencoded({ extended: true })); 
 app.use("/api/v1/reservation", reservationRouter);
-
+app.use("/api/v1/order",orderRouter);
 
 
 dbConnection();

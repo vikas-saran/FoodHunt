@@ -244,24 +244,27 @@
             
         ],
             "ourQualities": [
-                {
-                    "id": 1,
-                    "image": "./quality_food.svg",
-                    "title": "QUALITY FOOD",
-                    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis repellendus officia qui repellat."
-                },
-                {
-                    "id": 2,
-                    "image": "./super_taste.svg",
-                    "title": "SUPER TASTE",
-                    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing sit amet elit. Sit voluptates quaerat pariatur."
-                },
-                {
-                    "id": 3,
-                    "image": "./fast_delivery.svg",
-                    "title": "FAST DELIVERY",
-                    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis repellendus officia qui repellat."
-                }
+                
+                    {
+                        "id": 1,
+                        "image": "./quality_food.svg",
+                        "title": "QUALITY FOOD",
+                        "description": "Experience the best quality food in the city, crafted with the finest ingredients."
+                    },
+                    {
+                        "id": 2,
+                        "image": "./super_taste.svg",
+                        "title": "SUPER TASTE",
+                        "description": "Indulge in the super taste of our dishes, renowned throughout the city for their exceptional flavor."
+                    },
+                    {
+                        "id": 3,
+                        "image": "./fast_delivery.svg",
+                        "title": "FAST DELIVERY",
+                        "description": "Enjoy the fastest delivery service in the city, bringing hot and delicious food right to your door."
+                    }
+                
+                
             ],
             "dishes": [
                 {

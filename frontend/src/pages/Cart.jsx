@@ -5,6 +5,11 @@ import CartItem from "../components/CartItem";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
+import "../styles/cart.css"
+import { IoMdClose } from "react-icons/io";
+
+
+
 
 
 const Cart = () => {
@@ -12,6 +17,9 @@ const Cart = () => {
   let item=[];
   // console.log(item);
   const navigate=useNavigate();
+  const [otp,setOtp]=useState(0);
+  const [IN,setIN]=useState(0);
+  const [email, setEmail] = useState("");
 
   const {cart} = useSelector((state) => state);
   console.log(cart);
@@ -33,7 +41,7 @@ const Cart = () => {
     try {
       for(let i=0;i<orderSize;i++){item.push(cart[i].title)}
       const { data } = await axios.post(
-        "http://localhost:4000/api/v1/reservation/cart",
+        "http://localhost:4000/api/v1/order/cart",
         {orderSize,item,totalAmount},
         {
           headers: {
@@ -53,9 +61,52 @@ const Cart = () => {
     }
   };
 
+  
+  const handleOTP = async (e) => {
+    e.preventDefault();
+    try {
+      for(let i=0;i<orderSize;i++){item.push(cart[i].title)}
+      const { data } = await axios.post(
+        "http://localhost:4000/api/v1/order/otp",
+        {email,orderSize,item,totalAmount},
+        {
+          headers: {
+            "Content-Type": "application/json",
+             "Authorization": `Bearer ${otp}`
+          },
+          withCredentials: true,
+        }
+      );
+      console.log("OTPitem",data.message);
+      console.log("otp",otp);
+      toast.success(data.message);
+    } catch (error) {
+      toast.error(error.response.data.message);
+    }
+  };
 
 
-  return (
+
+
+  const popp = document.querySelector(".popupmodal");
+  const blurr=document.querySelector(".backblur");
+  const orderbutton=document.getElementById('orderbutton');
+
+  
+  function open(){        
+    setOtp(Math.floor(Math.random()*10000)); 
+    popp.classList.add("active");
+    blurr.classList.add("bluractive");
+  };
+  function close(){
+    setOtp(0);
+    popp.classList.remove("active");
+    blurr.classList.remove("bluractive");
+  };
+
+
+
+  return (<div>
     <div>
   {
     cart.length > 0  ? 
@@ -86,7 +137,7 @@ const Cart = () => {
           </p>
       
           <button className="text-lg w-full py-2.5 rounded-lg font-bold text-white bg-[#15803d]
-          border-2 border-[#15803d] hover:bg-white hover:text-[#15803d] transition-all duration-300 ease-in"  onClick={handleReservation}>
+          border-2 border-[#15803d] hover:bg-white hover:text-[#15803d] transition-all duration-300 ease-in"   onClick={open}>
             CheckOut Now
           </button>
     
@@ -107,6 +158,53 @@ const Cart = () => {
     </div>)
   }
     </div>
+
+    
+    <div className="popupmodal">
+        <div className="modalhead flex gap-10">
+            <p id="ShareMeProfile">Varify OTP</p>
+            <div className="text-xl" onClick={()=>{ popp.classList.remove("active");blurr.classList.remove("bluractive")}}><IoMdClose/></div>
+        </div>
+        <div className="flex gap-10  p-5 ">
+        <input
+                  type="email"
+                  placeholder="Email"
+                  className="email_tag text-black"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+        />
+                <button onClick={handleOTP}>
+                  Send_OTP
+                </button>
+                <input
+                  type="number"
+                  className="text-black"
+                  placeholder="Phone"
+                  value={IN}
+                  onChange={(e) => setIN(e.target.value)}
+                />
+                <button id="validatebutton" onClick={()=>{if(otp===parseInt(IN, 10)){orderbutton.disabled=false; console.log("validated");}}}>
+                  validate
+                </button>
+                <button id="orderbutton" disabled onClick={handleReservation}>
+                  ORDER
+                </button>
+        
+          </div>
+        <p className="modaldesc">Random otp is :{otp}  and {IN}</p>
+        <div className="modallinks">
+
+            <button onClick={handleReservation}>checkout</button>
+
+        </div>
+    </div>
+    <div className="backblur" onClick={close}></div>
+  
+
+
+
+    </div>
+
   );
 };
 

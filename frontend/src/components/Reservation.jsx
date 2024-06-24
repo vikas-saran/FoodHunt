@@ -44,14 +44,13 @@ const Reservation = () => {
 
   return (
     <section className="reservation" id="reservation">
+       <div className="circle1"></div>
+       <div className="circle2"></div>
       <div className="container">
-        <div className="banner">
-          <img src="/reservation.png" alt="res" />
-        </div>
+       
         <div className="banner">
           <div className="reservation_form_box">
             <h1>MAKE A RESERVATION</h1>
-            <p>For Further Questions, Please Call</p>
             <form>
               <div>
                 <input
@@ -104,6 +103,9 @@ const Reservation = () => {
               </button>
             </form>
           </div>
+        </div>
+        <div className="banner">
+          <img src="/reservation.png" alt="res" />
         </div>
       </div>
     </section>

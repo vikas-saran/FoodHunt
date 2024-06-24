@@ -64,6 +64,7 @@
   .about .container .banner a:hover span {
     background: #fff;
     color: #111;
+    transition: ease-in-out 0.3s;
   }
   @media (max-width: 1520px) {
     .about {
