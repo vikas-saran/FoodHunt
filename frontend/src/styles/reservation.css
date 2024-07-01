@@ -158,8 +158,8 @@
     .reservation_form_box
     form
     input[type="email"]:focus {
-    outline: none;
-    border-bottom: 2px solid skyblue;
+    
+   outline: none; border-bottom: 2px solid skyblue;
   }
   .reservation
     .container

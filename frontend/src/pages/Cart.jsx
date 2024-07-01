@@ -18,8 +18,12 @@ const Cart = () => {
   // console.log(item);
   const navigate=useNavigate();
   const [otp,setOtp]=useState(0);
-  const [IN,setIN]=useState(0);
+  const [IN,setIN]=useState();
   const [email, setEmail] = useState("");
+  const [buttonText, setButtonText] = useState('VALIDATE');
+  const handleClick = () => {
+    setButtonText('VALIDATED');
+  };
 
   const {cart} = useSelector((state) => state);
   console.log(cart);
@@ -91,7 +95,6 @@ const Cart = () => {
   const popp = document.querySelector(".popupmodal");
   const blurr=document.querySelector(".backblur");
   const orderbutton=document.getElementById('orderbutton');
-
   
   function open(){        
     setOtp(Math.floor(Math.random()*10000)); 
@@ -160,13 +163,13 @@ const Cart = () => {
     </div>
 
     
-    <div className="popupmodal">
+    <div className="popupmodal w-[300px]">
         <div className="modalhead flex gap-10">
             <p id="ShareMeProfile">Varify OTP</p>
             <div className="text-xl" onClick={()=>{ popp.classList.remove("active");blurr.classList.remove("bluractive")}}><IoMdClose/></div>
         </div>
-        <div className="flex gap-10  p-5 ">
-        <input
+        <div className=" flex-col g=10 mx-auto ">
+          <div className="flex mx-auto"> <input
                   type="email"
                   placeholder="Email"
                   className="email_tag text-black"
@@ -175,28 +178,30 @@ const Cart = () => {
         />
                 <button onClick={handleOTP}>
                   Send_OTP
-                </button>
-                <input
+                </button></div>
+          
+          
+          <div className="flex g-5 p-5">  <input
                   type="number"
                   className="text-black"
-                  placeholder="Phone"
+                  placeholder="OTP"
                   value={IN}
                   onChange={(e) => setIN(e.target.value)}
                 />
-                <button id="validatebutton" onClick={()=>{if(otp===parseInt(IN, 10)){orderbutton.disabled=false; console.log("validated");}}}>
-                  validate
-                </button>
-                <button id="orderbutton" disabled onClick={handleReservation}>
-                  ORDER
-                </button>
+                <button id="validatebutton" 
+   onClick={()=>{if(otp===parseInt(IN, 10)){ handleClick();orderbutton.classList.remove('disabled');orderbutton.classList.add('enabled'); console.log("validated");}}}>
+                  {buttonText}
+
+                  
+                </button></div>
+       
+              
+                
         
           </div>
-        <p className="modaldesc">Random otp is :{otp}  and {IN}</p>
-        <div className="modallinks">
-
-            <button onClick={handleReservation}>checkout</button>
-
-        </div>
+          <button id="orderbutton" className="disabled" onClick={handleReservation}>
+                  ORDER
+          </button>
     </div>
     <div className="backblur" onClick={close}></div>
   
